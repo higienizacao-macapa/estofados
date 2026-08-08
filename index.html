@@ -10,6 +10,25 @@
 
   gtag('config', 'AW-18378395387');
 </script>
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18378395387/SnDyCPKMq94cEPudwLtE',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Higienização de Estofados em Macapá AP | Soft Confort</title>
@@ -518,17 +537,11 @@
 </head>
 <body id="topo">
 
-<header>
-  <div class="container header-inner">
-    <a href="#topo" class="brand">
-      <img src="images/logo.png" alt="Soft Confort Higienização de Estofados - Macapá AP" width="200" height="150">
-    </a>
-    <div class="header-actions">
-      <a class="phone-link" href="tel:+5596984126462">📞 <span>(96) 98412-6462</span></a>
-      <a class="btn btn-whatsapp" href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados." target="_blank" rel="noopener">Orçamento grátis</a>
-    </div>
-  </div>
-</header>
+<a class="btn btn-whatsapp"
+   href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados"
+   onclick="return gtag_report_conversion(this.href);">
+   Orçamento grátis
+</a>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
@@ -541,9 +554,11 @@
       <h1>Seu estofado limpo e cheiroso, <em>sem sair de casa</em></h1>
       <p class="lead">Higienizamos sofás, tapetes, bancos de carro, colchões e camas com atendimento a domicílio em toda Macapá. Removemos manchas, odores e ácaros com produtos profissionais que não estragam o tecido.</p>
       <div class="hero-cta">
-        <a class="btn btn-whatsapp btn-lg" href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados." target="_blank" rel="noopener">
-          💬 Peça seu orçamento grátis
-        </a>
+        <a class="btn btn-whatsapp btn-lg"
+   href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados"
+   onclick="return gtag_report_conversion(this.href);">
+  💬 Peça seu orçamento grátis
+</a>
         <span class="cta-note">Resposta rápida direto pelo WhatsApp</span>
       </div>
       <!-- ⭐ Nota de exemplo: troque pela avaliação real do seu Google Meu Negócio -->
@@ -764,9 +779,11 @@
   <div class="container">
     <h2>Pronto para renovar seus estofados?</h2>
     <p>Fale agora com a gente e receba seu orçamento grátis pelo WhatsApp, sem compromisso.</p>
-    <a class="btn btn-whatsapp btn-lg" href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados." target="_blank" rel="noopener">
-      💬 Chamar no WhatsApp agora
-    </a>
+    <a class="btn btn-whatsapp btn-lg"
+   href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados"
+   onclick="return gtag_report_conversion(this.href);">
+  💬 Chamar no WhatsApp agora
+</a>
   </div>
 </section>
 
@@ -783,7 +800,11 @@
       </div>
       <div class="footer-contact">
         <a href="tel:+5596984126462">📞 (96) 98412-6462</a>
-        <a href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+
+<a href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados"
+   onclick="return gtag_report_conversion(this.href);">
+  💬 Falar no WhatsApp
+</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -793,9 +814,11 @@
 </footer>
 
 <!-- Botão flutuante -->
-<a class="float-whatsapp" href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="float-whatsapp"
+   href="https://wa.me/5596984126462?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Soft%20Confort%20e%20gostaria%20de%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20higieniza%C3%A7%C3%A3o%20de%20estofados"
+   onclick="return gtag_report_conversion(this.href);"
+   aria-label="Falar no WhatsApp">
   <span class="ico">💬</span><span class="label">Fale no WhatsApp</span>
 </a>
-
 </body>
 </html>
